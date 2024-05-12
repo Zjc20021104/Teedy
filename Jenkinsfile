@@ -6,13 +6,13 @@ pipeline {
                 sh 'mvn -B install -DskipTests'
             }
         }
-        stage('Package') {
-            steps {
-                checkout scmGit(branches: [[name: '*/master']], extensions: [],
-                userRemoteConfigs: [[url: 'https://github.com/traccytian/Teedy_2024.git']])
-                sh 'mvn -B -DskipTests clean package'
-            }
-        }
+        // stage('Package') {
+        //     steps {
+        //         checkout scmGit(branches: [[name: '*/master']], extensions: [],
+        //         userRemoteConfigs: [[url: 'https://github.com/traccytian/Teedy_2024.git']])
+        //         sh 'mvn -B -DskipTests clean package'
+        //     }
+        // }
         // Building Docker images
         stage('Building image') {
             steps{
