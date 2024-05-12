@@ -32,9 +32,9 @@ pipeline {
             stage('Run containers'){
             steps{
                 //your command
-                sh 'docker pull 123456zjc/teedy_local:v1.0',
-                sh 'docker run -d -p 8084:8080 --name teedy_manual01 teedy2024_manual',
-                sh 'docker run -d -p 8082:8080 --name teedy_manual02 teedy2024_manual',
+                sh 'docker pull 123456zjc/teedy_local:v1.0'
+                sh 'docker run -d -p 8084:8080 --name teedy_manual01 teedy2024_manual'
+                sh 'docker run -d -p 8082:8080 --name teedy_manual02 teedy2024_manual'
                 sh 'docker run -d -p 8083:8080 --name teedy_manual03 teedy2024_manual'
             }
         }
