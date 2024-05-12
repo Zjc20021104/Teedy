@@ -18,7 +18,7 @@ pipeline {
             steps{
                 //your command
                 sh 'sudo docker build -t teedy2024_manual .'
-                sh 'a'
+                sh 'sudo su'
             }
         }
         // Uploading Docker images into Docker Hub
