@@ -34,9 +34,9 @@ pipeline {
             steps{
                 //your command
                 sh 'sudo docker pull 123456zjc/teedy_local:v1.0'
-                sh 'sudo docker run -d -p 8084:8080 --name teedy_manual01 teedy2024_manual'
-                sh 'sudo docker run -d -p 8082:8080 --name teedy_manual02 teedy2024_manual'
-                sh 'sudo docker run -d -p 8083:8080 --name teedy_manual03 teedy2024_manual'
+                sh 'sudo docker run -d -p 8084:8080 --name teedy_manual011 teedy2024_manual'
+                sh 'sudo docker run -d -p 8082:8080 --name teedy_manual022 teedy2024_manual'
+                sh 'sudo docker run -d -p 8083:8080 --name teedy_manual033 teedy2024_manual'
             }
         }
 
