@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // 检出项目代码
-                git 'https://github.com/Zjc20021104/teedy.git'
+                git 'https://github.com/Zjc20021104/Teedy.git'
             }
         }
         stage('Build') {
