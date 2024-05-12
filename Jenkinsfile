@@ -17,7 +17,8 @@ pipeline {
         stage('Building image') {
             steps{
                 //your command
-                sh 'docker build -t teedy2024_manual .'
+                sh 'sudo docker build -t teedy2024_manual .'
+                sh 'a'
             }
         }
         // Uploading Docker images into Docker Hub
