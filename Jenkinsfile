@@ -8,7 +8,7 @@ sh 'mvn -B -DskipTests clean package'
 }
 stage('K8s') {
 steps {
-sh 'kubectl set image deployments/hello-node 123456zjc/teedy_local:v1.0
+sh 'kubectl set image deployments/hello-node docs=123456zjc/teedy_local:v1.0
 '
 }
 }
