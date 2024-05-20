@@ -13,7 +13,7 @@ steps {
 //   //sh 'kubectl expose deployment hello-node --type=LoadBalancer --port=8080'
 //   sh 'minikube service hello-node'
 // sh ' minikube service ww'
- sh 'kubectl set image deployment/hello-node docs=123456zjc/teedy_local:v1.0'
+ sh 'sudo kubectl set image deployment/hello-node docs=123456zjc/teedy_local:v1.0'
 }
 }
 }
